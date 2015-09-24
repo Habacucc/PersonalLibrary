@@ -1,0 +1,34 @@
+create database biblioteca_personal;
+
+use biblioteca_personal;
+
+create table profesores(
+id_profesor INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+nombre_profesor VARCHAR(128) NOT NULL
+);
+
+create table alumnos(
+id_alumno INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+nombre_alumno VARCHAR(128) NOT NULL
+);
+
+create table libros(
+id_libro VARCHAR(64) NOT NULL PRIMARY KEY,
+titulo VARCHAR(64) NOT NULL,
+autor VARCHAR(128) NOT NULL,
+anio INT NOT NULL,
+editorial VARCHAR(64) NOT NULL,
+genero VARCHAR(64) NOT NULL,
+numero_paginas INT NOT NULL,
+status INT(1) NOT NULL
+);
+
+create table prestamos(
+fecha_inicio date NOT NULL,
+fecha_fin date NOT NULL,
+id_libro VARCHAR(64) NOT NULL,
+id_alumno INT NOT NULL,
+FOREIGN KEY(id_libro) REFERENCES libros(id_libro) ON DELETE CASCADE ON UPDATE CASCADE,
+FOREIGN KEY(id_alumno) REFERENCES alumnos(id_alumno) ON DELETE CASCADE ON UPDATE CASCADE,
+PRIMARY KEY(id_libro,id_alumno,fecha_inicio,fecha_fin)
+);

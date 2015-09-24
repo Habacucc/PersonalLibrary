@@ -1,0 +1,4 @@
+insert into alumnos values(201121385,'Ernesto Daniel Serrano Romero');
+insert into alumnos values(201121386,'Juan Perez Perez');
+insert into alumnos values(201121387,'Maria Claudia Sanchez Galvez');
+insert into alumnos values(201121388,'Jose Jose Hernandez Hernandez');

@@ -1,0 +1,4 @@
+insert into profesores values(055001001,'Pedro Bello Lopez',123456);
+insert into profesores values(055002004,'Mario Anzures Garcia',123456);
+insert into profesores values(055001002,'Luis Rene Marcial Castillo',123456);
+insert into profesores values(055001003,'Mario Rossainz Lopez',123456);

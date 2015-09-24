@@ -1,0 +1,5 @@
+update libros set imagen="images/libros/Arte_Contemporaneo.jpg" where titulo="Arte Contemporaneo";
+update libros set imagen="images/libros/Programacion_C.jpg" where titulo="Programacion en C";
+update libros set imagen="images/libros/Programacion_Java.jpg" where titulo="Programacion en JAVA";
+update libros set imagen="images/libros/Fisica_Moderna.jpg" where titulo="Fisica Moderna";
+update libros set imagen="images/libros/Quimica_1.jpg" where titulo="Quimica 1";
